@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2020-09-28 14:03:18</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:40.522774</p>
-<p class='attribute'><strong>Status:</strong> Pass 6 Error 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2020-10-13 13:08:53</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:01.558627</p>
+<p class='attribute'><strong>Status:</strong> Pass 5 Failure 1</p>
 
 <p class='description'>测试结果如下</p>
 </div>
@@ -221,92 +221,31 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>test_case.unitt.oxcase</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
-</tr>
-
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_1</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
-
-    <div id='div_ft1.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.1: Traceback (most recent call last):
-  File "F:\接口和ui一体自动化\work\test_case\unitt.py", line 16, in test_1
-    ss=l.locats(self.el2).text
-  File "F:\接口和ui一体自动化\work\test_object\login.py", line 30, in locats
-    li = self.driver.find_element(*locator)  # 这里的*作用是解析，跟ddt的@unpage一样
-  File "D:\python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
-    'value': value})['value']
-  File "D:\python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
-    self.error_handler.check_response(response)
-  File "D:\python\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="1"]/td[3]"}
-  (Session info: chrome=85.0.4183.121)
-
-Traceback (most recent call last):
-  File "F:\接口和ui一体自动化\work\test_case\unitt.py", line 16, in test_1
-    ss=l.locats(self.el2).text
-  File "F:\接口和ui一体自动化\work\test_object\login.py", line 30, in locats
-    li = self.driver.find_element(*locator)  # 这里的*作用是解析，跟ddt的@unpage一样
-  File "D:\python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
-    'value': value})['value']
-  File "D:\python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
-    self.error_handler.check_response(response)
-  File "D:\python\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="1"]/td[3]"}
-  (Session info: chrome=85.0.4183.121)
-
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr class='passClass'>
+<tr class='failClass'>
     <td>jiekou.main.MyTestCase</td>
     <td>6</td>
-    <td>6</td>
+    <td>5</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',6)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',6)">Detail</a></td>
 </tr>
 
-<tr id='pt2.1' class='hiddenRow'>
+<tr id='pt1.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_get_1___http___39_98_138_157_5000_api_login______username___admin___password___123456________content_type____application_json______post____json____success______msg____loginvar__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
         pass</a>
 
-    <div id='div_pt2.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.1: 
+pt1.1: 
 
         </pre>
     </div>
@@ -315,22 +254,22 @@ pt2.1:
     </td>
 </tr>
 
-<tr id='pt2.2' class='hiddenRow'>
+<tr id='pt1.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_get_2___http___39_98_138_157_5000_api_getproductinfo_productid_8888___None__None___get____url___200_____httpstatus____productvar__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
         pass</a>
 
-    <div id='div_pt2.2' class="popup_window">
+    <div id='div_pt1.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.2: 
+pt1.2: 
 
         </pre>
     </div>
@@ -339,22 +278,22 @@ pt2.2:
     </td>
 </tr>
 
-<tr id='pt2.3' class='hiddenRow'>
+<tr id='pt1.3' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_get_3___http___39_98_138_157_5000_api_getuserinfo___None_____token_____loginvar_token_______get____url___200_____httpstatus____uservar__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
         pass</a>
 
-    <div id='div_pt2.3' class="popup_window">
+    <div id='div_pt1.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.3: 
+pt1.3: 
 
         </pre>
     </div>
@@ -363,22 +302,22 @@ pt2.3:
     </td>
 </tr>
 
-<tr id='pt2.4' class='hiddenRow'>
+<tr id='pt1.4' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_get_4___http___39_98_138_157_5000_api_addcart______userid___uservar_data_0__userid___openid____uservar_data_0__openid____productid___productvar_data_0__productid________token_____loginvar_token____content_type____application_json______post____json___200_____httpstatus____cartinfo__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.4')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
         pass</a>
 
-    <div id='div_pt2.4' class="popup_window">
+    <div id='div_pt1.4' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.4').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.4: 
+pt1.4: 
 
         </pre>
     </div>
@@ -387,22 +326,22 @@ pt2.4:
     </td>
 </tr>
 
-<tr id='pt2.5' class='hiddenRow'>
+<tr id='pt1.5' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_get_5___http___39_98_138_157_5000_api_createorder______cartid___cartinfo_data_0__cartid___openid____uservar_data_0__openid____productid___productvar_data_0__productid___userid___uservar_data_0__userid________token_____loginvar_token____content_type____application_json______post____json___200_____httpstatus_______</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.5')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
         pass</a>
 
-    <div id='div_pt2.5' class="popup_window">
+    <div id='div_pt1.5' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.5').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.5: 
+pt1.5: 
 
         </pre>
     </div>
@@ -411,22 +350,40 @@ pt2.5:
     </td>
 </tr>
 
-<tr id='pt2.6' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_6___http___124_225_222_184_90_xzsp_rest_item_get_itemDetails_734121846068490240_APP___None__None___get____url____用水人口登记______name_______</div></td>
+<tr id='ft1.6' class='none'>
+    <td class='failCase'><div class='testcase'>test_get_6___http___124_225_222_184_90_xzsp_rest_item_get_itemDetails_734121846068490240_APP___None__None___get____url____用水dd口33登记______name_______</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.6')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.6')" >
+        fail</a>
 
-    <div id='div_pt2.6' class="popup_window">
+    <div id='div_ft1.6' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.6').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.6').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.6: 
+ft1.6: Traceback (most recent call last):
+  File "D:\python\lib\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "F:\接口和ui一体自动化\work\jiekou\main.py", line 30, in test_get
+    self.assertEqual(exceptvalue, jsonpathexcept[0])
+AssertionError: '用水dd口33登记' != '用水人口登记'
+- 用水dd口33登记
++ 用水人口登记
+
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "F:\接口和ui一体自动化\work\jiekou\main.py", line 30, in test_get
+    self.assertEqual(exceptvalue, jsonpathexcept[0])
+AssertionError: '用水dd口33登记' != '用水人口登记'
+- 用水dd口33登记
++ 用水人口登记
+
+
 
         </pre>
     </div>
@@ -437,10 +394,10 @@ pt2.6:
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>7</td>
     <td>6</td>
-    <td>0</td>
+    <td>5</td>
     <td>1</td>
+    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>
