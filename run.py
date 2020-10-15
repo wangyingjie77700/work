@@ -5,7 +5,7 @@ from test_case.unitt import oxcase
 from jiekou.main import MyTestCase
 
 s = unittest.TestSuite()
-s.addTest(oxcase('test_1'))
+# s.addTest(oxcase('test_1'))
 # s.addTest(MyTestCase("test_01"))
 unittest.TestLoader()
 s.addTest(unittest.TestLoader().loadTestsFromTestCase(MyTestCase))
