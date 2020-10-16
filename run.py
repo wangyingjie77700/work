@@ -10,7 +10,7 @@ s = unittest.TestSuite()
 unittest.TestLoader()
 s.addTest(unittest.TestLoader().loadTestsFromTestCase(MyTestCase))
 # s.addTest(loader.loadTestsFromTestCase(oxcase))
-di = r'F:\接口和ui一体自动化\work\report'
+di = r'C:\Users\Administrator\.jenkins\workspace\政务系统UI接口自动化\report'
 report_file = di + r'\report2.html'
 if not os.path.exists(di):
     os.mkdir(di)
